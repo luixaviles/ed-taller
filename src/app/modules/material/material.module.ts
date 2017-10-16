@@ -3,13 +3,25 @@ import { CommonModule } from '@angular/common';
 
 import {
   MATERIAL_COMPATIBILITY_MODE,
+  MatButtonModule,
+  MatIconModule,
+  MatListModule,
+  MatToolbarModule
 } from '@angular/material';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    MatButtonModule,
+    MatIconModule,
+    MatListModule,
+    MatToolbarModule
   ],
   exports: [
+    MatButtonModule,
+    MatIconModule,
+    MatListModule,
+    MatToolbarModule
   ],
   providers: [
     { provide: MATERIAL_COMPATIBILITY_MODE, useValue: true }
